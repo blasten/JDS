@@ -14,7 +14,7 @@ $ npm install jds
 Then
 
 ```js
-var JSD = require('jsd');
+var JDS = require('jds');
 ```
 
 ### Browser
