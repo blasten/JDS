@@ -5,6 +5,8 @@
   "author": "Emmanuel Garcia <blasten@gmail.com>",
   "license": "MIT",
   "main": "build/jds",
+  "repository": "git://github.com/blasten/jds",
+  "license": "MIT",
   "devDependencies": {
     "grunt": "~0.4.2",
     "grunt-contrib-jshint": "~0.6.3",
