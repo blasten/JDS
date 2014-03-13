@@ -47,11 +47,11 @@ describe('JDS.Queue', function() {
       expect(queue.size()).to.be(0);
     });
 
-    it('should return the peek', function() {
+    it('should return the Peek', function() {
       var queue = new JDS.Queue([1, 2, 3, 4]);
-      var peak = queue.getPeak();
+      var Peek = queue.getPeek();
 
-      expect(queue.dequeue()).to.be(peak);
+      expect(queue.dequeue()).to.be(Peek);
     });
   });
 

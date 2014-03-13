@@ -99,7 +99,7 @@ var root = this;
     
     dequeue: function() {
       if (!this.isEmpty()) {
-        var peek = this.getPeak();
+        var peek = this.getPeek();
         this.offset++;
         // Amortize O(n) cost of slicing by n/2
         if (this.offset*2 >= this.queue.length) {
@@ -115,9 +115,9 @@ var root = this;
       return this.queue[this.offset + index];
     },
     
-    // Get the peak element of the queue
+    // Get the first element, but without removing it
     
-    getPeak: function() {
+    getPeek: function() {
       return this.get(0);
     },
     

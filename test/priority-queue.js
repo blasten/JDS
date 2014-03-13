@@ -11,11 +11,11 @@ describe('JDS.PriorityQueue', function() {
    it('should accept a initial list', function() {
     var list = [1, 2, 3, 4, 5];
     var pqueue = new JDS.PriorityQueue(list);
-    expect(pqueue.getPeak()).to.be(list[list.length-1]);
+    expect(pqueue.getPeek()).to.be(list[list.length-1]);
   });
 
 
-  describe('#peak()', function() {
+  describe('#Peek()', function() {
     it('should return the element with the maximum priority', function() {
       var size = 10000;
       var maxPriority = 0;
@@ -29,7 +29,7 @@ describe('JDS.PriorityQueue', function() {
         }
         pqueue.enqueue(value);
       }
-      expect(pqueue.getPeak()).to.be(maxPriority);
+      expect(pqueue.getPeek()).to.be(maxPriority);
     });
   });
 
@@ -55,7 +55,7 @@ describe('JDS.PriorityQueue', function() {
         }
       }
 
-      expect(pqueue.getPriority(pqueue.getPeak())).to.be(maxPriority);
+      expect(pqueue.getPriority(pqueue.getPeek())).to.be(maxPriority);
     });
   });
 
@@ -66,7 +66,7 @@ describe('JDS.PriorityQueue', function() {
       var pqueue = new JDS.PriorityQueue(list);
 
       while (!pqueue.isEmpty()) {
-        expect(pqueue.getPeak()).to.be(list.pop());
+        expect(pqueue.getPeek()).to.be(list.pop());
         pqueue.dequeue();
       }
 
@@ -86,7 +86,7 @@ describe('JDS.PriorityQueue', function() {
         }
       }
 
-      expect(pqueue.getPeak()).to.be(max);
+      expect(pqueue.getPeek()).to.be(max);
     });
 
   });

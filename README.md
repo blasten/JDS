@@ -90,7 +90,7 @@ Maintains elements sorted in descending order by their priorities
   queue.enqueue(100);
 
   // 100
-  console.log(queue.getPeak());
+  console.log(queue.getPeek());
 ```
 
 You can extend ``JDS.PriorityQueue`` to meet the requirements of your data
@@ -108,7 +108,7 @@ You can extend ``JDS.PriorityQueue`` to meet the requirements of your data
   queue.enqueue({x: 100, y: 100});
 
   // 200 200
-  console.log(queue.getPeak().x, queue.getPeak().y);
+  console.log(queue.getPeek().x, queue.getPeek().y);
 ```
 
 ## License
